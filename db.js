@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize')
-/*let db;
+/*let db;*/
 if(process.env.DATABASE_URL){
-  db=new Sequelize(process.env.DATABASE_URL)
+  const db=new Sequelize(process.env.DATABASE_URL)
 }
-else{*/
+else{
   const db=new Sequelize('shopdb' , 'shopper' , 'shoppass' ,{
   host: 'localhost',
   dialect: 'mysql',
@@ -13,7 +13,7 @@ else{*/
   }
   //storage: __dirname + '/users.db'
 })
-//}
+}
 /*const db = new Sequelize({
   dialect: 'postgres',
   database: 'd5shg1p83mopgh',
