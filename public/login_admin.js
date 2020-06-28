@@ -45,7 +45,7 @@ function calling(){
                 if(cnf)
                 {
                    
-                    localStorage.currvendorid = vendor.id;
+                    localStorage.currvendorid = vendor.v_id;
                     localStorage.vname=vendor.name;
                     
                     window.alert("login successfull");
