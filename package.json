@@ -1,0 +1,24 @@
+{
+  "name": "project_2020",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jquery": "^3.5.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.22.0",
+    "sqlite": "^4.0.11",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

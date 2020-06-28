@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+  <head>
+    <title>addproducts</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="common.js"></script>
+<script src="addproducts.js"></script>
+  </head>
+
+  <body>
+
+    <form style="margin: 20px;"class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom01">Product Name</label>
+            <input type="text" id="productname" class="form-control" id="validationCustom01" placeholder="Product Name for eg : Iphone X"  required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom02">Product Manufacturer Name</label>
+            <input type="text" id="manufacturername" class="form-control" id="validationCustom02" placeholder="Manufacturer Name for eg : apple.co"  required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          
+        </div>
+       
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Price</label>
+            <input type="number" id="price" class="form-control" id="validationCustom05" placeholder="Price" required>
+            <div class="invalid-feedback">
+              Please provide a valid price for the product.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <button id="btnadd" class="btn btn-primary" type="submit">ADD PRODUCT</button>
+        <button style="margin-left: 50px;"id="btnret" class="btn btn-primary" type="button" onclick="func()">RETURN BACK</button>
+      </form>
+      
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+
+
+  </body>
+</html>

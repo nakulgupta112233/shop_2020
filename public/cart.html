@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>shoppers's tab</title>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="calctot.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <br>
+    <hr>
+    <h2 style="text-align: center; font-style: oblique; font-weight: 600;">Your Cart</h2>
+    <hr>
+
+<div class="container">
+	<table id="cart" class="table table-hover table-condensed">
+    				<thead>
+						<tr>
+							<th style="width:50%; font-weight: 600; font-size: x-large;">Product</th>
+							<th style="width:10%; font-weight: 600; font-size: x-large;">Price</th>
+							<th style="width:8%; font-weight: 600; font-size: x-large;">Quantity</th>
+							<th style="width:22%; font-weight: 600; font-size: x-large;" class="text-center">Subtotal(+18% GST)</th>
+							<th style="width:10%"></th>
+						</tr>
+                    </thead>
+                    <div class="row">
+					<tbody  id="cart_table">
+						<!--<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Product 1</h4>
+										<!--<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>-->
+									<!--</div>
+								</div>
+							</td>
+							<td data-th="Price">$1.99</td>
+							<td data-th="Quantity">
+								   1
+							</td>
+							<td data-th="Subtotal" class="text-center">1.99</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+							</td>
+                        </tr>-->
+                    </div>
+					</tbody>
+					<tfoot>
+						<tr >
+							<td colspan="8" class="text-center"  ><strong><h3 id="tot">Total : </p></strong></td>
+                        </tr>
+                        <tr >
+							<td colspan="8"class="text-center"  ><strong><h3 id="tota">Total : </p></strong></td>
+                        </tr>
+                        <tr class="visible-xs" >
+							<td colspan="8"class="text-center"  ><strong><h3 id="total">Total : </p></strong></td>
+						</tr>
+						<tr>
+                           <!-- <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>-->
+                            <td><button id="checkt" class="btn btn-warning" onclick="abc()"> < Continue Shopping </button>
+							<td colspan="2" class="hidden-xs"></td>
+							<td class="hidden-xs text-center" id="total_1" style="font-weight:600;font-size:large"><strong>Total $1.99</strong></td>
+							<td><button id="checkt" class="btn btn-success btn-block" onclick="ab()">Checkout > </button>
+                                <!--<a href="checkout.html" class="btn btn-success btn-block" id="checkt">Checkout <!--<i class="fa fa-angle-right"></i>--></td>
+						</tr>
+					</tfoot>
+				</table>
+</div>
+<script async defer src="crt.js"></script>
+</body>
+<script src="adp.js" defer></script>
+</html>
