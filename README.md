@@ -14,3 +14,5 @@
 ### then you can buy products and they will be added to your cart'
 ## check my cart tab to access your cart
  ### checkout to place your order
+
+![image](/public/wallpapers/joker.jpeg)
