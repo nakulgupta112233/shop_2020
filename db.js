@@ -2,7 +2,7 @@ const Sequelize = require('sequelize')
 
 const db = new Sequelize('d5shg1p83mopgh' , 'sbgalhjgnxdhzm' , 'df9ec1ae99ef65168f130e4d7bbcd2c5b2753e95d3d450c1171d7dc0e2381c5b' ,{
   host: 'ec2-52-0-155-79.compute-1.amazonaws.com',
-  dialect: 'mysql',
+  dialect: 'postgres',
   pool: {
     min: 0,
     max: 5,
